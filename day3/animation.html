@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+  
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    /*  box with initial position on the left */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      position: absolute; 
+      animation-name: moveRight;
+      animation-duration: 3s;   
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      /* animation: moveRight 3s ease-in-out infinite; */
+    }
+
+    /* Define the animation */
+    @keyframes moveRight {
+      0% {
+        left: 0; /* Start position: left edge of the screen */
+      }
+      50% {
+        left: 80%; /* Move to 80% of the screen width */
+      }
+      100% {
+        left: 0; /* Return to the original position */
+      }
+    }
+  </style>
+<body>
+    <div class="box">
+        Observe me
+    </div>
+</body>
+</html>

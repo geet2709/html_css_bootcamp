@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first landing page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            height: 100vh;
+            width: 100%;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+
+        .parent>* {
+            border: 2px solid blue;
+        }
+
+        .child1 {
+            height: 5%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .child2 {
+            height: 40%;
+        }
+
+        .child3 {
+            height: 50%;
+        }
+
+        .div1 {
+            border: 2px solid green;
+            background-color: aqua;
+            height: 100%;
+            width: 5%;
+        }
+
+        .div2 {
+            border: 2px solid yellow;
+            background-color: aqua;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .div2>* {
+            height: 100%;
+            width: 20%;
+            border: 2px solid white;
+        }
+
+        .child2>* {
+            background-color: crimson;
+            border: 2px solid white;
+        }
+
+        .child2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .child3 >*{
+            background-color: blue;
+            border:2px solid white;
+            width: 30%;
+        }
+        .child3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="div1">
+
+            </div>
+            <div class="div2">
+                <div class="subchild1"></div>
+                <div class="subchild2"></div>
+                <div class="subchild3"></div>
+                <div class="subchild4"></div>
+                <div class="subchild5"></div>
+            </div>
+        </div>
+        <div class="child2">
+            <div>div1 Lorem, ipsum.
+            </div>
+            <div>div2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt maiores voluptatibus! Culpa
+                quam ducimus quasi, doloremque omnis minima molestias.</div>
+            <div>div3 Lorem.</div>
+        </div>
+        <div class="child3">
+<div class="card1">card1</div>
+<div class="card2">card2</div>
+<div class="card3">card3</div>
+        </div>
+    </div>
+</body>
+
+</html>
