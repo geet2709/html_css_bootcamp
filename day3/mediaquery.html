@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 80px;
+    }
+
+    .features {
+      width: 30%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Media Query for screens 768px or smaller) */
+    @media screen and (max-width: 768px) {
+      .features {
+        width: 45%;
+        background-color: yellow;
+        border: 2px solid red;
+        color: #dc143c;
+      }
+    }
+
+    /* Media Query for devices with screens 480px or smaller */
+    @media screen and (max-width: 480px) {
+      .features {
+        width: 90%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="features">Box 1</div>
+        <div class="features">Box 2</div>
+        <div class="features">Box 3</div>
+      </div>
+</body>
+</html>
